@@ -1,0 +1,1 @@
+/home/runerat/Desktop/Rust/dating_sim_reloaded/target/debug/dating_sim_reloaded: /home/runerat/Desktop/Rust/dating_sim_reloaded/src/chunk.rs /home/runerat/Desktop/Rust/dating_sim_reloaded/src/chunk_handaler.rs /home/runerat/Desktop/Rust/dating_sim_reloaded/src/main.rs /home/runerat/Desktop/Rust/dating_sim_reloaded/src/text_displayer.rs
