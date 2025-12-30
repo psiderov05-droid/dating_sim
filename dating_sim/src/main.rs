@@ -3,8 +3,8 @@ mod chunk;
 use chunk::Chunk_;
 mod chunk_handaler;
 use chunk_handaler::ChunkHandaler;
-mod text_displayer;
-use text_displayer::textDsiplayer;
+mod displayer;
+use displayer::textDsiplayer;
 
 #[macroquad::main("Dating Sim")]
 async fn main() {
@@ -14,6 +14,15 @@ async fn main() {
     let mut handler:ChunkHandaler<> = chunk_handaler::ChunkHandaler::new();
     handler.load_text_from_file();
     let displayer:textDsiplayer = textDsiplayer::new(handler.list_of_chunks);
+    displayer.display_text().await;
+
+
+
+
+
+
+
+
 
     /* 
     loop {
@@ -38,12 +47,5 @@ async fn main() {
     } 
     */
 
-    loop 
-    {
-        clear_background(BLACK);
 
-        displayer.display_text();
-
-        next_frame().await;
-    }
 }

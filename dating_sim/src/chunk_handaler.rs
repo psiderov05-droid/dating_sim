@@ -14,7 +14,7 @@ impl ChunkHandaler {
     }
 
     pub fn load_text_from_file(&mut self) -> io::Result<()> {
-        let file = File::open("/home/runerat/Desktop/Rust/dating_sim_reloaded/Text/dialog.txt")?;
+        let file = File::open("/home/runerat/dating_sim/dating_sim/Text/dialog.txt")?;
         let reader = BufReader::new(file);
 
         for line_result in reader.lines() {
